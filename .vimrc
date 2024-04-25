@@ -27,6 +27,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'preservim/tagbar'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'ryanoasis/vim-devicons'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
