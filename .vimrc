@@ -71,7 +71,7 @@ autocmd BufWinEnter * if &buftype != 'quickfix' && getcmdwintype() == '' | silen
 " mappings
 nnoremap <space> za|                     " button for folding
 nnoremap <C-t> :terminal ++rows=24<CR>|  " open terminal with set height
-nnoremap <C-r> :REPLToggle<CR>|          " open or close REPL
+nnoremap <C-r> :REPLToggle<CR>|          " open or close REPL (use <leader>w to send code to REPL)
 nnoremap <C-n> :NERDTreeToggle<CR>|      " open or close sidebar
 nnoremap <C-m> :TagbarToggle<CR>|        " open or close tagbar
 nnoremap <leader>t :stop<CR>|            " go to terminal (go back with fg)
