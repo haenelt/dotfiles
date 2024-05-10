@@ -29,6 +29,7 @@ Plugin 'preservim/tagbar'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plugin 'sillybun/vim-repl'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -68,22 +69,19 @@ autocmd BufEnter * if winnr() == winnr('h') && bufname('#') =~ 'NERD_tree_\d\+' 
 autocmd BufWinEnter * if &buftype != 'quickfix' && getcmdwintype() == '' | silent NERDTreeMirror | endif " open the existing NERDTree on each new tab
 
 " mappings
-nnoremap <space> za|                " button for folding
-nnoremap <C-t> :terminal<CR>|       " open terminal
-nnoremap <C-n> :NERDTreeToggle<CR>| " open or close sidebar
-nnoremap <C-m> :TagbarToggle<CR>|   " open or close tagbar
-nnoremap <C-j> <C-w><C-j>|          " split navigation
-nnoremap <C-k> <C-w><C-k>|          " split navigation
-nnoremap <C-l> <C-w><C-l>|          " split navigation
-nnoremap <C-h> <C-w><C-h>|          " split navigation
-nnoremap <leader>t :stop<CR>|       " go to terminal (go back with fg)
-inoremap " ""<left>|                " close automatically
-inoremap ' ''<left>|                " close automatically
-inoremap ( ()<left>|                " close automatically
-inoremap [ []<left>|                " close automatically
-inoremap { {}<left>|                " close automatically
-inoremap {<CR> {<CR>}<ESC>O|        " close automatically
-inoremap {;<CR> {<CR>};<ESC>O|      " close automatically
+nnoremap <space> za|                     " button for folding
+nnoremap <C-t> :terminal ++rows=24<CR>|  " open terminal with set height
+nnoremap <C-r> :REPLToggle<CR>|          " open or close REPL
+nnoremap <C-n> :NERDTreeToggle<CR>|      " open or close sidebar
+nnoremap <C-m> :TagbarToggle<CR>|        " open or close tagbar
+nnoremap <leader>t :stop<CR>|            " go to terminal (go back with fg)
+inoremap " ""<left>|                     " close automatically
+inoremap ' ''<left>|                     " close automatically
+inoremap ( ()<left>|                     " close automatically
+inoremap [ []<left>|                     " close automatically
+inoremap { {}<left>|                     " close automatically
+inoremap {<CR> {<CR>}<ESC>O|             " close automatically
+inoremap {;<CR> {<CR>};<ESC>O|           " close automatically
 " Function to activate a virtualenv in the embedded interpreter for
 " omnicomplete and other things like that.
 function LoadVirtualEnv(path)
