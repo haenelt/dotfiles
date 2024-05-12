@@ -52,6 +52,7 @@ set ttimeoutlen=50    " switching time between modes
 
 " color scheme
 colorscheme gruvbox
+set background=dark
 
 " airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
