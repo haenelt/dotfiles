@@ -17,6 +17,6 @@ With the following commands, no symlinks are created and all dotfiles are copied
 ```
 rm -rf .dotfiles/.git
 rm -rf .dotfiles/.gitignore
-mv .dotfiles/.* $HOME
+mv -r .dotfiles/.* $HOME
 rm -rf .dotfiles
 ```
