@@ -36,8 +36,11 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 syntax on             " add syntax highlighting
+set expandtab         " convert tab to spaces   
+set autoindent        " better indentation 
+set smartindent       " slightly more powerful than smartindent
 set t_Co=256          " use 256 colors
-set number            " add line numbers
+set relativenumber    " add line numbers
 set foldmethod=indent " folding
 set foldlevel=99      " open file unfolded
 set cursorline        " highlights the current line
