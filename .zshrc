@@ -55,10 +55,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# freesurfer
-export FREESURFER_HOME=/Applications/freesurfer/7.4.1
-source $FREESURFER_HOME/SetUpFreesurfer.sh &>/dev/null
-
 # aliases
 alias make_project='source /Users/dh014/source/PythonTemplate/make_project.sh' # make new project
 alias timtam='ssh -X dh014@timtam.nmr.mgh.harvard.edu' # login to timtam with X11 forwarding
@@ -75,3 +71,7 @@ vimVenAutoload() {
     fi;
 }
 alias vim="vimVenAutoload"
+
+# shows user@host in front of the prompt
+PROMPT="%{$fg[magenta]%}%n@%{$fg[magenta]%}%m%{$reset_color%} ${PROMPT}"
+
