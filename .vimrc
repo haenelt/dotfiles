@@ -49,6 +49,7 @@ set splitright        " position of new split screen
 set encoding=utf-8    " ensure right encoding
 set clipboard=unnamed " copy and paste to/from other applications
 set ttimeoutlen=50    " switching time between modes
+set fileformat=unix   " file format 
 
 " color scheme
 colorscheme gruvbox
