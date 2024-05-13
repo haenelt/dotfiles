@@ -60,6 +60,7 @@ alias make_project='source /Users/dh014/source/PythonTemplate/make_project.sh' #
 alias timtam='ssh -X dh014@timtam.nmr.mgh.harvard.edu' # login to timtam with X11 forwarding
 alias p41trd3='ssh -X dh014@p41trd3.nmr.mgh.harvard.edu' # login to p41trd3 with X11 forwarding 
 
+# load VIM with enabled python virtual environment
 [ "$VIMRUNTIME" ] && [ "$VIRTUAL_ENV" ] && source "$VIRTUAL_ENV/bin/activate"
 vimVenAutoload() {
     if [ -e .venv/bin/activate ]; then
