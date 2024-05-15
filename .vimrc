@@ -55,6 +55,9 @@ set fileformat=unix   " file format
 colorscheme gruvbox
 set background=dark
 
+" color column
+highlight colorcolumn ctermbg=238
+
 " airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 " Note: You must define the dictionary first before setting values.
