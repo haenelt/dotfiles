@@ -58,6 +58,10 @@ set background=dark
 " color column
 highlight colorcolumn ctermbg=238
 
+" REPL
+let g:repl_position = 0
+let g:repl_height = 24 
+
 " airline
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 " Note: You must define the dictionary first before setting values.
