@@ -30,6 +30,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'sillybun/vim-repl'
+Plugin 'pixelneo/vim-python-docstring'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -87,6 +88,7 @@ nnoremap <C-r> :REPLToggle<CR>|          " open or close REPL (use <leader>w to 
 nnoremap <C-n> :NERDTreeToggle<CR>|      " open or close sidebar
 nnoremap <C-m> :TagbarToggle<CR>|        " open or close tagbar
 nnoremap <leader>t :stop<CR>|            " go to terminal (go back with fg)
+nnoremap <leader>ss :Docstring<CR>|      " insert python docstring
 inoremap " ""<left>|                     " close automatically
 inoremap ' ''<left>|                     " close automatically
 inoremap ( ()<left>|                     " close automatically

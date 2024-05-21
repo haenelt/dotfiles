@@ -15,3 +15,4 @@ let g:ale_fixers = {
 let g:ale_python_flake8_options = '--max-line-length=88'
 let g:ale_python_mypy_options = '--ignore-missing-imports=True'
 let g:ale_fix_on_save = 1 " set this variable to 1 to fix files when you save them
+let g:python_style = 'google' " docstring style
