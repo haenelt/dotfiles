@@ -28,6 +28,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# miniconda
+source /Users/dh014/source/miniconda3/bin/activate
+
 # syntax highlighting and auto-completion
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -41,7 +44,6 @@ bindkey -v
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="standout"
 
 # aliases
-alias miniconda="source /Users/dh014/source/miniconda3/bin/activate" # start conda
 alias make_project='source /Users/dh014/source/PythonTemplate/make_project.sh' # make new project
 alias timtam='ssh dh014@timtam.nmr.mgh.harvard.edu' # login to timtam with X11 forwarding
 alias p41trd3='ssh dh014@p41trd3.nmr.mgh.harvard.edu' # login to p41trd3 with X11 forwarding 
