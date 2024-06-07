@@ -66,3 +66,21 @@ alias vim="vimVenAutoload"
 # shows user@host in front of the prompt
 PROMPT="%{$fg[magenta]%}%n@%{$fg[magenta]%}%m%{$reset_color%} ${PROMPT}"
 
+export PATH=${PATH}:/opt/homebrew/opt/python/libexec/bin
+
+# -------------------------------------------------------
+# for AFNI: auto-inserted by init_user_dotfiles.py
+
+# add AFNI abin to PATH
+export PATH=${PATH}:/Users/dh014/source/afni/abin
+
+# set up tab completion for AFNI programs
+if [ -f $HOME/.afni/help/all_progs.COMP.zsh ]
+then
+   autoload -U +X bashcompinit && bashcompinit
+   autoload -U +X compinit && compinit -i \
+     && source $HOME/.afni/help/all_progs.COMP.zsh
+fi
+# -------------------------------------------------------
+
+export R_LIBS=/Users/dh014/source/afni/sw/R-4.3.1
