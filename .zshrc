@@ -45,6 +45,8 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="standout"
 
 # aliases
 alias make_project='source /Users/dh014/source/PythonTemplate/make_project.sh' # make new project
+alias segmentator='conda activate segmentator; segmentator' # call segmentator installed in a conda environment 
+
 alias timtam='ssh dh014@timtam.nmr.mgh.harvard.edu' # login to timtam with X11 forwarding
 alias p41trd3='ssh dh014@p41trd3.nmr.mgh.harvard.edu' # login to p41trd3 with X11 forwarding 
 alias timtamX='ssh -X dh014@timtam.nmr.mgh.harvard.edu' # login to timtam with X11 forwarding
@@ -65,22 +67,3 @@ alias vim="vimVenAutoload"
 
 # shows user@host in front of the prompt
 PROMPT="%{$fg[magenta]%}%n@%{$fg[magenta]%}%m%{$reset_color%} ${PROMPT}"
-
-export PATH=${PATH}:/opt/homebrew/opt/python/libexec/bin
-
-# -------------------------------------------------------
-# for AFNI: auto-inserted by init_user_dotfiles.py
-
-# add AFNI abin to PATH
-export PATH=${PATH}:/Users/dh014/source/afni/abin
-
-# set up tab completion for AFNI programs
-if [ -f $HOME/.afni/help/all_progs.COMP.zsh ]
-then
-   autoload -U +X bashcompinit && bashcompinit
-   autoload -U +X compinit && compinit -i \
-     && source $HOME/.afni/help/all_progs.COMP.zsh
-fi
-# -------------------------------------------------------
-
-export R_LIBS=/Users/dh014/source/afni/sw/R-4.3.1
