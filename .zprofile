@@ -29,5 +29,5 @@ export R_LIBS=/Users/dh014/source/afni/sw/R-4.3.1
 export PATH=${PATH}:/Users/dh014/source/ants/ants-2.5.2/bin:$PATH
 
 # vmtk 
-export PATH="/Users/dh014/source/vmtk/bin:$PATH"
+export PATH=${PATH}:/Users/dh014/source/vmtk/bin:$PATH
 
