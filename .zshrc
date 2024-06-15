@@ -52,6 +52,11 @@ alias p41trd3='ssh dh014@p41trd3.nmr.mgh.harvard.edu' # login to p41trd3 with X1
 alias timtamX='ssh -X dh014@timtam.nmr.mgh.harvard.edu' # login to timtam with X11 forwarding
 alias p41trd3X='ssh -X dh014@p41trd3.nmr.mgh.harvard.edu' # login to p41trd3 with X11 forwarding 
 
+# copy data from timtam to local
+scp_timtam() {
+    scp dh014@timtam.nmr.mgh.harvard.edu $1 $2        
+} 
+
 # load VIM with enabled python virtual environment
 [ "$VIMRUNTIME" ] && [ "$VIRTUAL_ENV" ] && source "$VIRTUAL_ENV/bin/activate"
 vimVenAutoload() {
