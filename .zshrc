@@ -53,8 +53,10 @@ alias timtamX='ssh -X dh014@timtam.nmr.mgh.harvard.edu' # login to timtam with X
 alias p41trd3X='ssh -X dh014@p41trd3.nmr.mgh.harvard.edu' # login to p41trd3 with X11 forwarding 
 
 # copy data from timtam to local
+# first argument: source file on remote machine 
+# second argument: destiny on local machine 
 scp_timtam() {
-    scp dh014@timtam.nmr.mgh.harvard.edu $1 $2        
+    scp dh014@timtam.nmr.mgh.harvard.edu:$1 $2        
 } 
 
 # load VIM with enabled python virtual environment
