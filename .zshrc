@@ -13,7 +13,7 @@ ZSH_THEME="eastwood"
 zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -58,6 +58,10 @@ alias p41trd3X='ssh -X dh014@p41trd3.nmr.mgh.harvard.edu' # login to p41trd3 wit
 scp_timtam() {
     scp dh014@timtam.nmr.mgh.harvard.edu:$1 $2        
 } 
+
+scpr_timtam() {
+    scp -r dh014@timtam.nmr.mgh.harvard.edu:$1 $2   
+}
 
 # load VIM with enabled python virtual environment
 [ "$VIMRUNTIME" ] && [ "$VIRTUAL_ENV" ] && source "$VIRTUAL_ENV/bin/activate"
