@@ -47,14 +47,19 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="standout"
 alias make_project='source /Users/dh014/source/PythonTemplate/make_project.sh' # make new project
 alias segmentator='conda activate segmentator; segmentator' # call segmentator installed in a conda environment 
 
-alias mlsc='ssh dh014@mlsc.nmr.mgh.harvard.edu'  # login to mlsc cluster
-alias timtam='ssh dh014@timtam.nmr.mgh.harvard.edu' # login to timtam
-alias baleada='ssh dh014@baleada.nmr.mgh.harvard.edu' # login to baleada
-alias p41trd3='ssh dh014@p41trd3.nmr.mgh.harvard.edu' # login to p41trd3 
-alias mlscX='ssh -X dh014@mlsc.nmr.mgh.harvard.edu'  # login to mlsc cluster with X11 forwarding
-alias timtamX='ssh -X dh014@timtam.nmr.mgh.harvard.edu' # login to timtam with X11 forwarding
-alias baleadaX='ssh -X dh014@baleada.nmr.mgh.harvard.edu' # login to baleada with X11 forwarding
-alias p41trd3X='ssh -X dh014@p41trd3.nmr.mgh.harvard.edu' # login to p41trd3 with X11 forwarding 
+# login to clusters with and without X11 forwarding
+alias mlsc='ssh dh014@mlsc.nmr.mgh.harvard.edu' 
+alias timtam='ssh dh014@timtam.nmr.mgh.harvard.edu' 
+alias baleada='ssh dh014@baleada.nmr.mgh.harvard.edu'
+alias p41trd3='ssh dh014@p41trd3.nmr.mgh.harvard.edu' 
+alias takoyaki='ssh dh014@takoyaki.nmr.mgh.harvard.edu'
+alias tonkotsu='ssh dh014@tonkotsu.nmr.mgh.harvard.edu'
+alias mlscX='ssh -X dh014@mlsc.nmr.mgh.harvard.edu'
+alias timtamX='ssh -X dh014@timtam.nmr.mgh.harvard.edu'
+alias baleadaX='ssh -X dh014@baleada.nmr.mgh.harvard.edu'
+alias p41trd3X='ssh -X dh014@p41trd3.nmr.mgh.harvard.edu' 
+alias takoyakiX='ssh -X dh014@takoyaki.nmr.mgh.harvard.edu'
+alias tonkotsuX='ssh -X dh014@tonkotsu.nmr.mgh.harvard.edu' 
 
 # copy data from timtam to local
 # first argument: source file on remote machine 
