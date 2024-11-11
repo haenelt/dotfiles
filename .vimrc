@@ -20,7 +20,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'dense-analysis/ale'
 Plugin 'nvie/vim-flake8'
-Plugin 'morhetz/gruvbox'
+Plugin 'sainnhe/everforest'
 Plugin 'preservim/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -31,6 +31,8 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'sillybun/vim-repl'
 Plugin 'pixelneo/vim-python-docstring'
+Plugin 'Yggdroot/indentLine'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -41,7 +43,7 @@ set expandtab         " convert tab to spaces
 set autoindent        " better indentation 
 set smartindent       " slightly more powerful than smartindent
 set t_Co=256          " use 256 colors
-set relativenumber    " add line numbers
+set number            " add line numbers
 set foldmethod=indent " folding
 set foldlevel=99      " open file unfolded
 set cursorline        " highlights the current line
@@ -53,7 +55,7 @@ set ttimeoutlen=50    " switching time between modes
 set fileformat=unix   " file format 
 
 " color scheme
-colorscheme gruvbox
+colorscheme everforest
 set background=dark
 
 " color column
@@ -70,7 +72,7 @@ let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 " accidentally overwriting its contents.
 
 " airline theme
-let g:airline_theme='gruvbox'
+let g:airline_theme='everforest'
 let g:airline_powerline_fonts = 1
 
 " NERDTREE

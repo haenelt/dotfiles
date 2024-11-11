@@ -23,17 +23,22 @@ ENABLE_CORRECTION="false"
 plugins=(
 	git
 	nvm
+        docker
 	vi-mode
+        zsh-autosuggestions
+        zsh-completions 
+        zsh-history-substring-search 
+        zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
 
+# syntax highlighting and auto-completion
+source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # miniconda
 source /Users/dh014/source/miniconda3/bin/activate
-
-# syntax highlighting and auto-completion
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
 
