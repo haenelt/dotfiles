@@ -1,4 +1,5 @@
 #!/bin/zsh
+# Start vim with tmux in split pane
 
 TMUX_CONF="~/.tmux_vim.conf"
 SESSION_NAME="code"
