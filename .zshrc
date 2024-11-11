@@ -66,6 +66,9 @@ alias p41trd3X='ssh -X dh014@p41trd3.nmr.mgh.harvard.edu'
 alias takoyakiX='ssh -X dh014@takoyaki.nmr.mgh.harvard.edu'
 alias tonkotsuX='ssh -X dh014@tonkotsu.nmr.mgh.harvard.edu' 
 
+# open vim as ide
+alias code='~/start/start_vim_tmux.sh'
+
 # copy data from timtam to local
 # first argument: source file on remote machine 
 # second argument: destiny on local machine 
