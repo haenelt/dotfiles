@@ -1,7 +1,7 @@
 #!/bin/zsh
 # Start vim with tmux in split pane
 
-TMUX_CONF="~/.tmux_vim.conf"
+TMUX_CONF=".tmux_vim.conf"
 SESSION_NAME="code"
 
 # start detached tmux session
@@ -15,7 +15,8 @@ tmux split-window -v
 tmux resize-pane -D 10
 
 # select vim pane
-tmux select-pane -t 1 #"$SESSION_NAME"
+# note that first pane is set to 1 in .tmux.conf
+tmux select-pane -t 1 
 
 # Attach to the session
 tmux attach-session -t "$SESSION_NAME"
