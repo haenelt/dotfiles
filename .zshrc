@@ -38,7 +38,7 @@ source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # miniconda
-source /Users/dh014/source/miniconda3/bin/activate
+source $HOME/source/miniconda3/bin/activate
 
 # User configuration
 
@@ -49,7 +49,7 @@ bindkey -v
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="standout"
 
 # aliases
-alias make_project='source /Users/dh014/source/PythonTemplate/make_project.sh' # make new project
+alias make_project="source $HOME/source/PythonTemplate/make_project.sh" # make new project
 alias segmentator='conda activate segmentator; segmentator' # call segmentator installed in a conda environment 
 
 # login to clusters with and without X11 forwarding

@@ -1,14 +1,25 @@
 #!/bin/zsh
-# Start vim with tmux in split pane
 
-TMUX_CONF=".tmux_vim.conf"
+# This script starts vim with a separate tmux pane.
+# Inputs:
+#   *arg1: name of text file
+
+
+TMUX_CONF="$HOME/.tmux_vim.conf"
 SESSION_NAME="code"
+
+# set the variable to "none" if no argument is provided
+arg="${1:-none}"
 
 # start detached tmux session
 tmux -f "$TMUX_CONF" new-session -d -s "$SESSION_NAME"
 
 # open vim
-tmux send-keys 'vim' C-m
+if [[ "$arg" == "none" ]]; then
+    tmux send-keys "vim" C-m
+else
+    tmux send-keys "vim $arg" C-m
+fi
 
 # split horizontally
 tmux split-window -v 

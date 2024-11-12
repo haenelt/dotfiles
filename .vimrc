@@ -30,8 +30,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'sillybun/vim-repl'
-Plugin 'pixelneo/vim-python-docstring'
-Plugin 'Yggdroot/indentLine'
+Plugin 'pixelneo/vim-python-docstring' Plugin 'Yggdroot/indentLine'
 Plugin 'christoomey/vim-tmux-navigator'
 
 " All of your Plugins must be added before the following line
@@ -55,6 +54,7 @@ set ttimeoutlen=50    " switching time between modes
 set fileformat=unix   " file format 
 
 " color scheme
+syntax enable
 colorscheme everforest
 set background=dark
 
