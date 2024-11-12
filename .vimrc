@@ -30,7 +30,8 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'sillybun/vim-repl'
-Plugin 'pixelneo/vim-python-docstring' Plugin 'Yggdroot/indentLine'
+Plugin 'pixelneo/vim-python-docstring' 
+Plugin 'Yggdroot/indentLine'
 Plugin 'christoomey/vim-tmux-navigator'
 
 " All of your Plugins must be added before the following line
