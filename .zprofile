@@ -28,8 +28,3 @@ export R_LIBS=/Users/dh014/source/afni/sw/R-4.3.1
 # ants
 export PATH=${PATH}:/Users/dh014/source/ants/ants-2.5.2/bin:$PATH
 
-# vmtk
-VMTKHOME=/Users/dh014/source/vmtk
-VMTK_PYTHON_VERSION=python3.6
-export PATH=$VMTKHOME/bin:$PATH
-#export PYTHONPATH=$VMTKHOME/lib/${VMTK_PYTHON_VERSION}/site-packages:$PYTHONPATH
