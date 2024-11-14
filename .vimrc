@@ -30,7 +30,6 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'sillybun/vim-repl'
-Plugin 'pixelneo/vim-python-docstring' 
 Plugin 'Yggdroot/indentLine'
 Plugin 'christoomey/vim-tmux-navigator'
 
@@ -67,14 +66,27 @@ let g:repl_position = 0
 let g:repl_height = 24 
 
 " airline
-let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
-" Note: You must define the dictionary first before setting values.
-" Also, it's a good idea to check whether it exists as to avoid
-" accidentally overwriting its contents.
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
 
-" airline theme
-let g:airline_theme='everforest'
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.notexists = ''
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.whitespace = 'Ξ'
+
+let g:airline_theme = 'everforest'
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#branch#enabled = 1
 
 " NERDTREE
 autocmd VimEnter * NERDTree | wincmd p " start NERDTree and put the cursor in the other window
