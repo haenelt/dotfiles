@@ -84,6 +84,15 @@ autocmd BufEnter * if winnr() == winnr('h') && bufname('#') =~ 'NERD_tree_\d\+' 
     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif " if another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree
 autocmd BufWinEnter * if &buftype != 'quickfix' && getcmdwintype() == '' | silent NERDTreeMirror | endif " open the existing NERDTree on each new tab
 
+" VIM TMUX Navigator
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <c-p> :TmuxNavigatePrevious<cr>
+
 " mappings
 nnoremap <space> za|                     " button for folding
 nnoremap <C-t> :terminal ++rows=24<CR>|  " open terminal with set height
@@ -99,6 +108,7 @@ inoremap [ []<left>|                     " close automatically
 inoremap { {}<left>|                     " close automatically
 inoremap {<CR> {<CR>}<ESC>O|             " close automatically
 inoremap {;<CR> {<CR>};<ESC>O|           " close automatically
+
 " Function to activate a virtualenv in the embedded interpreter for
 " omnicomplete and other things like that.
 function LoadVirtualEnv(path)
