@@ -23,7 +23,6 @@ ENABLE_CORRECTION="false"
 plugins=(
 	git
 	nvm
-        docker
 	vi-mode
         zsh-autosuggestions
         zsh-completions 
