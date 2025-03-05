@@ -54,16 +54,14 @@ alias segmentator='conda activate segmentator; segmentator' # call segmentator i
 # login to clusters with and without X11 forwarding
 alias mlsc='ssh dh014@mlsc.nmr.mgh.harvard.edu' 
 alias timtam='ssh dh014@timtam.nmr.mgh.harvard.edu' 
-alias baleada='ssh dh014@baleada.nmr.mgh.harvard.edu'
 alias p41trd3='ssh dh014@p41trd3.nmr.mgh.harvard.edu' 
-alias takoyaki='ssh dh014@takoyaki.nmr.mgh.harvard.edu'
 alias tonkotsu='ssh dh014@tonkotsu.nmr.mgh.harvard.edu'
+alias fugue='ssh dh014@fugue.nmr.mgh.harvard.edu'
 alias mlscX='ssh -X dh014@mlsc.nmr.mgh.harvard.edu'
 alias timtamX='ssh -X dh014@timtam.nmr.mgh.harvard.edu'
-alias baleadaX='ssh -X dh014@baleada.nmr.mgh.harvard.edu'
 alias p41trd3X='ssh -X dh014@p41trd3.nmr.mgh.harvard.edu' 
-alias takoyakiX='ssh -X dh014@takoyaki.nmr.mgh.harvard.edu'
 alias tonkotsuX='ssh -X dh014@tonkotsu.nmr.mgh.harvard.edu' 
+alias fugueX='ssh -X dh014@fugue.nmr.mgh.harvard.edu'
 
 # open vim as ide
 alias code='~/.start/start_vim_tmux.sh'
