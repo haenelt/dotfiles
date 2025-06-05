@@ -82,7 +82,7 @@ vimVenAutoload() {
     if [ -e .venv/bin/activate ]; then
         . .venv/bin/activate;
         vim $*;
-        deactivate;
+        conda deactivate;
     else
         vim $*;
     fi;
