@@ -55,8 +55,12 @@ set fileformat=unix   " file format
 
 " color scheme
 syntax enable
+set background=light                     " light or dark
+let g:everforest_background = 'hard'     " soft, medium or hard
+let g:everforest_enable_italic = 1       " enables italic comments
+let g:everforest_better_performance = 1  " speeds up rendering
 colorscheme everforest
-set background=dark
+set termguicolors                        " ensure true color support
 
 " color column
 highlight colorcolumn ctermbg=238
