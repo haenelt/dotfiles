@@ -20,7 +20,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'dense-analysis/ale'
 Plugin 'nvie/vim-flake8'
-Plugin 'sainnhe/everforest'
+Plugin 'morhetz/gruvbox'
 Plugin 'preservim/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -56,10 +56,8 @@ set fileformat=unix   " file format
 " color scheme
 syntax enable
 set background=light                     " light or dark
-let g:everforest_background = 'hard'     " soft, medium or hard
-let g:everforest_enable_italic = 1       " enables italic comments
-let g:everforest_better_performance = 1  " speeds up rendering
-colorscheme everforest
+let g:gruvbox_contrast_light='hard'      " soft, medium or hard
+colorscheme gruvbox
 set termguicolors                        " ensure true color support
 
 " color column
@@ -87,7 +85,7 @@ let g:airline_symbols.notexists = ''
 let g:airline_symbols.crypt = '🔒'
 let g:airline_symbols.whitespace = 'Ξ'
 
-let g:airline_theme = 'everforest'
+let g:airline_theme = 'gruvbox'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
