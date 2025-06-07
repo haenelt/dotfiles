@@ -32,6 +32,9 @@ Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'sillybun/vim-repl'
 Plugin 'Yggdroot/indentLine'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'pangloss/vim-javascript'  
+Plugin 'leafgarland/typescript-vim'
+Plugin 'maxmellon/vim-jsx-pretty'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
