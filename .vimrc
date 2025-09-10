@@ -1,4 +1,4 @@
-" VIM configuration
+" VIM con iguration
 " by Daniel Haenelt
 
 " The following python packages need to be installed:
@@ -35,6 +35,8 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'pangloss/vim-javascript'  
 Plugin 'leafgarland/typescript-vim'
 Plugin 'maxmellon/vim-jsx-pretty'
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plugin 'junegunn/fzf.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -111,6 +113,8 @@ nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
 nnoremap <silent> <c-p> :TmuxNavigatePrevious<cr>
 
 " mappings
+nnoremap <leader>f :GFiles<CR>|          " fzf
+nnoremap <leader>r :Rg<CR>|              " ripgrep
 nnoremap <space> za|                     " button for folding
 nnoremap <C-t> :terminal ++rows=24<CR>|  " open terminal with set height
 nnoremap <C-r> :REPLToggle<CR>|          " open or close REPL (use <leader>w to send code to REPL)

@@ -61,6 +61,10 @@ alias raijin='ssh dh014@raijin.nmr.mgh.harvard.edu'
 alias marduk='ssh dh014@marduk.nmr.mgh.harvard.edu'
 alias baldur='ssh dh014@baldur.nmr.mgh.harvard.edu'
 alias ardebil='ssh dh014@ardebil.nmr.mgh.harvard.edu'
+alias sherlock='ssh dhaenelt@login.sherlock.stanford.edu'
+
+# activate python environment
+alias activate='source $(poetry env info --path)/bin/activate'
 
 # open vim as ide
 alias code='~/.start/start_vim_tmux.sh'
@@ -68,13 +72,22 @@ alias code='~/.start/start_vim_tmux.sh'
 # copy data from timtam to local
 # first argument: source file on remote machine 
 # second argument: destiny on local machine 
-scp_timtam() {
+scp_from_timtam() {
     scp dh014@timtam.nmr.mgh.harvard.edu:$1 $2        
 } 
 
-scpr_timtam() {
+scpr_from_timtam() {
     scp -r dh014@timtam.nmr.mgh.harvard.edu:$1 $2   
 }
+
+scp_to_timtam() {
+    scp $1 dh014@timtam.nmr.mgh.harvard.edu:$2
+}
+
+scpr_to_timtam() {
+    scp -r $1 dh014@timtam.nmr.mgh.harvard.edu:$2
+}
+
 
 # load VIM with enabled python virtual environment
 [ "$VIMRUNTIME" ] && [ "$VIRTUAL_ENV" ] && source "$VIRTUAL_ENV/bin/activate"
